@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="forml">
+        <input name="btclic" type="button" value="Cliquez ici" onclick="message();" />
+        <!--onClik est attribut d'évenetement qui fait l'appel à la fonction message définie déja en js-->
+    </form>
+
+    <form name="form2">
+        Ecrire votre nom:
+        <input type="text" name="txtNom" />
+        <input name="btclick2" type="button" value="Cliquez ici" onClick="message2(document.form2.txtNom);" />
+    </form>
+    <form name="form3">
+           saisir un numéro:
+            <input name="txtN"  type="text" size="5" />
+        
+        <input name="btclic3" type="button" value="Cliquez ici" onClick="document.form3.txtR.value=carré(document.form3.txtN);" />
+        <br/>
+        le carré de ce nombre est :
+        <input name="txtR" type="text" size="10"readonly/>
+        </form>
+    
+    <script src="./../JS/script.js"></script>
+</body>
+
+</html>
